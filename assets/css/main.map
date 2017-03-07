@@ -2,11 +2,29 @@
 	"version": 3,
 	"file": "../scss/main.css",
 	"sources": [
-		"../scss/main.scss"
+		"../scss/main.scss",
+		"../scss/abstracts/_variables.scss",
+		"../scss/abstracts/_functions.scss",
+		"../scss/vendors/_reset.scss",
+		"../scss/base/_base.scss",
+		"../scss/layout/_header.scss",
+		"../scss/layout/_nav.scss",
+		"../scss/layout/_footer.scss",
+		"../scss/components/_button.scss",
+		"../scss/components/_blocks.scss"
 	],
 	"sourcesContent": [
-		"@charset 'utf-8';"
+		"/*\r\n\tPortfolio - Jincy George\r\n\tAuthor: Jincy George\r\n*/\r\n\r\n@charset 'utf-8';\r\n\r\n// 1. Configuration and helpers\r\n@import\r\n  'abstracts/variables',\r\n  'abstracts/functions';\r\n\r\n// 2. Vendors\r\n@import\r\n  'vendors/reset';\r\n\r\n// 3. Base stuff\r\n@import\r\n  'base/base';\r\n\r\n// 4. Layout-related sections\r\n@import\r\n  'layout/header',\r\n  'layout/nav',\r\n  'layout/footer';\r\n\r\n// 5. Components\r\n@import\r\n  'components/button',\r\n  'components/blocks';\r\n",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		""
 	],
-	"mappings": "",
+	"mappings": "AAAA;;;EAGE",
 	"names": []
 }
