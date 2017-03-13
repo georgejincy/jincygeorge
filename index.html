@@ -26,35 +26,297 @@
 
   <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
+    <div class = "home-screen">
+
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- <a class="navbar-brand" href="#">Jincy George</a> -->
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+      </nav>
 
-    <div class="container">
+      <!-- Header -->
+      <header>
+          <div class="container">
+            <div class = "row">
+              <div class="intro-text">
+                  <div class="intro-lead-in">Jincy George</div>
+                  <div class="intro-heading">Web developer. Love to Design & Create</div>
+                  <a href="#about" class="btn btn-xl">Tell Me More</a>
+              </div>
+            </div>
+          </div>
+      </header>
+    </div> <!--/. .home-screen-->
 
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-      </div>
+    <section id = "about">
+      <div class="container">
+        <p id = "startchange">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+       
+      </div>  
+    </section>
 
-    </div><!-- /.container -->
+    <section id = "skills">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-12 col-sm-12 text-center">
+              <h2 class="section-heading">Skills</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-lg-12 col-sm-12 text-center">
+            <h3 class="skill-header">FRONT-END</h3>
+            <ul class = "skills">
+              <li>HTML5</li>
+              <li>CSS3: SASS/Media Queries</li>
+              <li>JavaScript, jQuery</li>
+              <li>Responsive Design</li>
+              <li>APIs, AJAX, JSON</li>
+            </ul>
+            <h3 class="skill-header">BACK-END</h3>
+            <ul class = "skills">
+              <li>NodeJS</li>
+              <li>Express</li>
+              <li>Database development: MySQL</li>
+            </ul>
+            <h3 class="skill-header">WHAT I USE</h3>
+            <ul class = "skills">
+              <li>Sublime Text Editor</li>
+            </ul>
+            <h3 class="skill-header">OTHER</h3>
+            <ul class = "skills">
+              <li>Version Control: GIT</li>
+              <li>Deployment: Heroku</li>
+            </ul>
+          </div>
+        </div>  
+      </div>  
+    </section><!-- ./Skills section -->
+
+    <section id = "portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12 text-center">
+                    <h2 class="section-heading">Portfolio</h2>
+                    <h3 class="section-subheading text-muted">Some of my recent projects.</h3>
+                </div>
+            </div>
+            <div class="row">
+              <ul class = "portfolio-grid">
+                <li>
+                  <div class = "col-md-4 col-sm-6 portfolio-item">
+                    <div class="portfolio-info">
+                      <div class = "portfolio-info-front pf-img1"></div>
+                      <div class = "portfolio-info-back">
+                        <h3>Pantry Delish</h3>
+                        <hr />
+                        <p>The pantry delish app helps hungry users find recipes from ingredients in their pantry.</p>
+                        <h5>Technologies</h5>
+                        <p>Frontend: Firebase, JavaScript, jQuery, AJAX, Materialize, Bootstrap, HTML5, CSS</p>
+                        <p>API: Spoonacular API, Youtube API</p>
+                        <hr />
+                        <a href="https://github.com/georgejincy/PantryDelish" class="btn btn-info" target="_blank">View Github</a>
+                        <a href="https://infinite-brushlands-87290.herokuapp.com" class="btn btn-info" target="_blank">View Demo</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class = "col-md-4 col-sm-6 portfolio-item">
+                    <div class="portfolio-info">
+                      <div class = "portfolio-info-front pf-img1"></div>
+                      <div class = "portfolio-info-back">
+                        <h3>Pantry Delish</h3>
+                        <hr />
+                        <p>The pantry delish app helps hungry users find recipes from ingredients in their pantry.</p>
+                        <h5>Technologies</h5>
+                        <p>Frontend: Firebase, JavaScript, jQuery, AJAX, Materialize, Bootstrap, HTML5, CSS</p>
+                        <p>API: Spoonacular API, Youtube API</p>
+                        <hr />
+                        <a href="https://github.com/georgejincy/PantryDelish" class="btn btn-info" target="_blank">View Github</a>
+                        <a href="https://infinite-brushlands-87290.herokuapp.com" class="btn btn-info" target="_blank">View Demo</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class = "col-md-4 col-sm-6 portfolio-item">
+                    <div class="portfolio-info">
+                      <div class = "portfolio-info-front pf-img1"></div>
+                      <div class = "portfolio-info-back">
+                        <h3>Pantry Delish</h3>
+                        <hr />
+                        <p>The pantry delish app helps hungry users find recipes from ingredients in their pantry.</p>
+                        <h5>Technologies</h5>
+                        <p>Frontend: Firebase, JavaScript, jQuery, AJAX, Materialize, Bootstrap, HTML5, CSS</p>
+                        <p>API: Spoonacular API, Youtube API</p>
+                        <hr />
+                        <a href="https://github.com/georgejincy/PantryDelish" class="btn btn-info" target="_blank">View Github</a>
+                        <a href="https://infinite-brushlands-87290.herokuapp.com" class="btn btn-info" target="_blank">View Demo</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class = "col-md-4 col-sm-6 portfolio-item">
+                    <div class="portfolio-info">
+                      <div class = "portfolio-info-front pf-img1"></div>
+                      <div class = "portfolio-info-back">
+                        <h3>Pantry Delish</h3>
+                        <hr />
+                        <p>The pantry delish app helps hungry users find recipes from ingredients in their pantry.</p>
+                        <h5>Technologies</h5>
+                        <p>Frontend: Firebase, JavaScript, jQuery, AJAX, Materialize, Bootstrap, HTML5, CSS</p>
+                        <p>API: Spoonacular API, Youtube API</p>
+                        <hr />
+                        <a href="https://github.com/georgejincy/PantryDelish" class="btn btn-info" target="_blank">View Github</a>
+                        <a href="https://infinite-brushlands-87290.herokuapp.com" class="btn btn-info" target="_blank">View Demo</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class = "col-md-4 col-sm-6 portfolio-item">
+                    <div class="portfolio-info">
+                      <div class = "portfolio-info-front pf-img1"></div>
+                      <div class = "portfolio-info-back">
+                        <h3>Pantry Delish</h3>
+                        <hr />
+                        <p>The pantry delish app helps hungry users find recipes from ingredients in their pantry.</p>
+                        <h5>Technologies</h5>
+                        <p>Frontend: Firebase, JavaScript, jQuery, AJAX, Materialize, Bootstrap, HTML5, CSS</p>
+                        <p>API: Spoonacular API, Youtube API</p>
+                        <hr />
+                        <a href="https://github.com/georgejincy/PantryDelish" class="btn btn-info" target="_blank">View Github</a>
+                        <a href="https://infinite-brushlands-87290.herokuapp.com" class="btn btn-info" target="_blank">View Demo</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="assets/images/pantrydelish.jpg" class="img-responsive" alt="roundicons">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Round Icons</h4>
+                        <p class="text-muted">Graphic Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="portfolioimg2">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Startup Framework</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/treehouse.png" class="img-responsive" alt="portfolioimg3">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Treehouse</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/golden.png" class="img-responsive" alt="portfolioimg4">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Golden</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/escape.png" class="img-responsive" alt="portfolioimg5">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Escape</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+  
+            </div>
+        </div> 
+    </section>
+
+    <section id = "contact">
+      <div class="container">
+        <div class="row">
+          <div class = "col-md-12">
+            <h1 id="contact-header">Get in touch</h1>
+            <p> | </p>
+            <p><a href = "mailto:jincydz@gmail.com">Email me</a></p>
+              <ul class="list-inline social-buttons">
+                  <li><a href="#" data-toggle="tooltip" title="georgejincy"><i class="fa fa-github"></i></a>
+                  </li>
+                  <li><a href="#" data-toggle="tooltip" title="jincy-george"><i class="fa fa-linkedin"></i></a>
+                  </li>
+                  <li><a href="#" data-toggle="tooltip" title="@jincygeorge8388"><i class="fa fa-twitter"></i></a>
+                  </li>
+              </ul>
+
+          </div>
+        </div>      
+      </div>  
+    </section><!-- ./Contact section -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="copyright">Copyright &copy; JincyGeorge 2016</span>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- ./footer-->
 
 
     <!-- Bootstrap core JavaScript
@@ -62,6 +324,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/javascript/jquery-3.1.1.min.js"></script>
     <script src="assets/javascript/bootstrap.js"></script>
+    <script src="assets/javascript/app.js"></script>
     
   </body>
 </html>
