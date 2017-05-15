@@ -1,20 +1,22 @@
 header{
     .intro-text {
-        padding-top: 100px;
-        padding-bottom: 50px;
+        padding-top: 300px;
+        z-index: 10;
+        position: relative;
         .intro-lead-in {
-            @include serif-font;
-            font-style: italic;
-            font-size: 22px;
-            line-height: 22px;
-            margin-bottom: 25px;
+            color: $brand-secondary;
+            font-family: $raleway-sans-serif;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 3 * $rem-base;
         }
-        .intro-heading {
+        /* .intro-heading {
             @include heading-font;
             font-weight: 700;
             font-size: 50px;
             line-height: 50px;
             margin-bottom: 25px;
-        }
+        } */
     }
 }
+

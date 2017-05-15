@@ -9,7 +9,7 @@ $(document).ready(function(){
    $(document).scroll(function() { 
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
-          $(".navbar-default").css('background-color', '#F99471');
+          $(".navbar-default").css('background-color', '#2357c1');
        } else {
           $('.navbar-default').css('background-color', 'transparent');
        }

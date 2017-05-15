@@ -2,6 +2,14 @@
     background:transparent;
     border:none !important;
 }
+.navbar-nav li a{
+    font-size: 1.10 * $rem-base;
+    
+}
+.navbar-default .navbar-nav > li > a{
+   color: $white; 
+}
+
 @media (min-width: 768px) {
     .navbar .navbar-nav {
         display: inline-block;
@@ -10,6 +18,8 @@
     }
 
     .navbar .navbar-collapse {
+        padding-top: 10px;
+        padding-bottom: 10px;
         text-align: center;
     }
 }

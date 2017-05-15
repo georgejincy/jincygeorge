@@ -1,25 +1,46 @@
 // Home Screen
 .home-screen {
+    position: relative;
 	background: 
     /* top, transparent red */ 
-    linear-gradient(
-      rgba(52, 51, 52, 0.45), 
-      rgba(52, 51, 52, 0.45)
-    ),
+   /*  linear-gradient(
+     rgba(52, 51, 52, 0.45), 
+     rgba(52, 51, 52, 0.45)
+   ), */
     /* bottom, image */
-    url('../images/header-bg.jpg');
+   
+    url('../images/IMG_6374.jpg');
+    
 	//background: linear-gradient(#3C3B3D, #3C3B3D);
 	//background: url('../images/header-bg.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
     @include background-cover;
-    text-align: left;
+    text-align: center;
     color: white;
     height: 100vh;
     min-height: 600px;
 }
 
+/* .overlay{
+    background:  url('../images/IMG_6421_en.jpg');
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+}   */
+.home-content{
+    width: 100%;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    margin: 0;
+    mix-blend-mode: color-burn;
+}
 // Portfolio
 
 .portfolio-grid {
@@ -97,17 +118,17 @@
     background-position: center center;
     @include background-cover;
 }
-.pf-img1{
+.pf-img3{
     background-image: url(../images/trainscheduler.jpg);
     background-position: center center;
     @include background-cover;
 }
-.pf-img1{
+.pf-img4{
     background-image: url(../images/looneytrivia.png);
     background-position: center center;
     @include background-cover;
 }
-.pf-img1{
+.pf-img5{
     background-image: url(../images/AvengersRPG.jpg);
     background-position: center center;
     @include background-cover;
