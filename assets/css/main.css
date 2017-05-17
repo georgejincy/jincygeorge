@@ -3,213 +3,166 @@
 	Author: Jincy George
 */
 /* Site Variables */
-header .intro-text {
-  padding-top: 300px;
-  z-index: 10;
-  position: relative;
-  /* .intro-heading {
-            @include heading-font;
-            font-weight: 700;
-            font-size: 50px;
-            line-height: 50px;
-            margin-bottom: 25px;
-        } */
+body {
+  xbackground-color: #35B3B1;
+  xpadding-top: 70px;
 }
 
-header .intro-text .intro-lead-in {
-  color: #2d3f61;
-  font-family: Raleway, sans-serif;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 54px;
+.navigation {
+  background-color: none !important;
+}
+
+nav {
+  top: 0px;
+}
+
+.navbar {
+  padding-top: 50px;
 }
 
 .navbar-default {
-  background: transparent;
-  border: none !important;
+  background-color: transparent;
+  border-color: transparent;
 }
 
-.navbar-nav li a {
-  font-size: 19.8px;
+ul.social > li {
+  margin-left: 20px;
 }
 
-.navbar-default .navbar-nav > li > a {
+.social-nav {
+  margin-right: 20px;
+}
+
+/* General button style (reset)
+.butn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.butn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+} */
+/* Button 2 */
+.btn-2 {
+  background: #55CF9F;
+  color: #fff;
+  box-shadow: 0 6px #39A77B;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+
+/* Button 2g */
+.btn-2g {
+  border-radius: 40px;
+}
+
+.btn-2g:hover {
+  box-shadow: 0 4px #39A77B;
+  top: 2px;
+}
+
+.btn-2g:active {
+  box-shadow: 0 0 #39A77B;
+  top: 6px;
+}
+
+.btn-2i {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+}
+
+.btn-2i:hover {
+  box-shadow: 0 4px #39A77B;
+  top: 2px;
+}
+
+.btn-2i:active {
+  box-shadow: 0 0 #39A77B;
+  top: 6px;
+}
+
+.social-nav > li > a {
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.menu-nav > li > a {
+  border-radius: 40px;
+  margin-left: 16px;
+}
+
+.intro-header {
+  padding-top: 0px;
+  padding-bottom: 20px;
+  text-align: center;
+  xbackground: linear-gradient(rgba(40, 171, 250, 0.55), rgba(40, 171, 250, 0.55)), url(../images/IMG_6368.jpg) no-repeat center center;
+  background: url(../images/mainbg.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.intro-header .intro-message {
+  position: relative;
+  padding-top: 20%;
+  padding-bottom: 20%;
   color: #FAFAFA;
 }
 
-@media (min-width: 768px) {
-  .navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-    vertical-align: top;
-  }
-  .navbar .navbar-collapse {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-  }
+.about-section {
+  background-color: #55CF9F;
+  color: #FAFAFA;
 }
 
-footer {
-  margin: 10px;
-  text-align: center;
+.portfolio-section {
+  background-color: #EDF8E4;
 }
 
-.home-screen {
-  position: relative;
-  background: url("../images/IMG_6374.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  text-align: center;
-  color: white;
-  height: 100vh;
-  min-height: 600px;
+/* ---- grid ---- */
+.grid {
+  background: #EDF8E4;
 }
 
-/* .overlay{
-    background:  url('../images/IMG_6421_en.jpg');
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    background-size: cover;
-}   */
-.home-content {
-  width: 100%;
-  justify-content: center;
-  top: 0;
-  left: 0;
-  height: 100%;
-  margin: 0;
-  mix-blend-mode: color-burn;
-}
-
-.portfolio-grid {
-  margin: 20px 0 0 0;
-  padding: 0;
-  list-style: none;
+/* clear fix */
+.grid:after {
+  content: '';
   display: block;
-  text-align: center;
-  width: 100%;
-}
-
-/* .portfolio-grid:after,
-.portfolio-item:before {
-    content: '';
-    display: table;
-} */
-.portfolio-grid:after {
   clear: both;
 }
 
-.portfolio-grid li {
-  width: 400px;
-  height: 320px;
-  display: inline-block;
-  margin: 20px;
+/* ---- .grid-item ---- */
+.grid-sizer,
+.grid-item {
+  width: 32.333%;
+  margin: 9px 9px 0 0;
 }
 
-.portfolio-item {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  cursor: default;
-  perspective: 900px;
+.grid-item {
+  float: left;
 }
 
-.portfolio-info {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-}
-
-.portfolio-info > div {
+.grid-item img {
   display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-position: center center;
-  transition: all 0.4s linear;
-  transform-origin: 50% 0%;
-}
-
-.portfolio-info .portfolio-info-front {
-  box-shadow: inset 0 0 0 16px rgba(0, 0, 0, 0.3);
-}
-
-.portfolio-info .portfolio-info-back {
-  transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
-  background: #000;
-  opacity: 0;
-}
-
-.pf-img1 {
-  background-image: url(../images/pantrydelish.jpg);
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-
-.pf-img2 {
-  background-image: url(../images/githubfinder.jpg);
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-
-.pf-img3 {
-  background-image: url(../images/trainscheduler.jpg);
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-
-.pf-img4 {
-  background-image: url(../images/looneytrivia.png);
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-
-.pf-img5 {
-  background-image: url(../images/AvengersRPG.jpg);
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-
-.portfolio-item:hover .portfolio-info-front {
-  transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
-  opacity: 0;
-}
-
-.portfolio-item:hover .portfolio-info-back {
-  transform: rotate3d(1, 0, 0, 0deg);
-  opacity: 1;
-}
-
-#contact {
-  text-align: center;
-}
-
-#contact .social-buttons {
-  width: 100%;
-  font-size: 40px;
+  max-width: 100%;
 }

@@ -1,156 +1,52 @@
-// Home Screen
-.home-screen {
-    position: relative;
-	background: 
-    /* top, transparent red */ 
-   /*  linear-gradient(
-     rgba(52, 51, 52, 0.45), 
-     rgba(52, 51, 52, 0.45)
-   ), */
-    /* bottom, image */
-   
-    url('../images/IMG_6374.jpg');
-    
-	//background: linear-gradient(#3C3B3D, #3C3B3D);
-	//background: url('../images/header-bg.jpg');
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    @include background-cover;
-    text-align: center;
-    color: white;
-    height: 100vh;
-    min-height: 600px;
-}
-
-/* .overlay{
-    background:  url('../images/IMG_6421_en.jpg');
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
+.intro-header{
+	padding-top: 0px;
+	padding-bottom: 20px;
+	text-align: center;
+	xbackground: linear-gradient(rgba(40, 171, 250, 0.55), rgba(40, 171, 250, 0.55)), url(../images/IMG_6368.jpg) no-repeat center center;
+	background: url(../images/mainbg.jpg) no-repeat center center;
     background-size: cover;
-}   */
-.home-content{
-    width: 100%;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    height: 100%;
-    margin: 0;
-    mix-blend-mode: color-burn;
-}
-// Portfolio
-
-.portfolio-grid {
-    margin: 20px 0 0 0;
-    padding: 0;
-    list-style: none;
-    display: block;
-    text-align: center;
-    width: 100%;
-}
-
-/* .portfolio-grid:after,
-.portfolio-item:before {
-    content: '';
-    display: table;
-} */
-
-.portfolio-grid:after {
-    clear: both;
-}
-
-.portfolio-grid li {
-    width: 400px;
-    height: 320px;
-    display: inline-block;
-    margin: 20px;
-}
-
-//Giving a perspective to portfolio item
-.portfolio-item {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    cursor: default;
-    perspective: 900px;
-}
-
-//Preserve -3d for portfolio-info
-.portfolio-info{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-}
-
-//The front and backface will have a transition and the transform origin will be set to 50% 0%:
-.portfolio-info > div {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-position: center center;
-    transition: all 0.4s linear;
-    transform-origin: 50% 0%;
-}
-
-.portfolio-info .portfolio-info-front {
-    box-shadow: inset 0 0 0 16px rgba(0,0,0,0.3);
-}
-
-// The backface will be rotated initially in order to appear as the down face of a cube:
-.portfolio-info .portfolio-info-back {
-    transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
-    background: #000;
-    opacity: 0;
-}
-
-.pf-img1{
-    background-image: url(../images/pantrydelish.jpg);
-    background-position: center center;
-    @include background-cover;
-}
-.pf-img2{
-    background-image: url(../images/githubfinder.jpg);
-    background-position: center center;
-    @include background-cover;
-}
-.pf-img3{
-    background-image: url(../images/trainscheduler.jpg);
-    background-position: center center;
-    @include background-cover;
-}
-.pf-img4{
-    background-image: url(../images/looneytrivia.png);
-    background-position: center center;
-    @include background-cover;
-}
-.pf-img5{
-    background-image: url(../images/AvengersRPG.jpg);
-    background-position: center center;
-    @include background-cover;
-}
-
-.portfolio-item:hover .portfolio-info-front {
-    transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
-    opacity: 0;
-}
-
-.portfolio-item:hover .portfolio-info-back {
-    transform: rotate3d(1,0,0,0deg);
-    opacity: 1;
-}
-
-
-// Contact
-#contact{
-    text-align: center;
-    .social-buttons{
-        width: 100%;
-        font-size: 40px;
+    .intro-message{
+    	position: relative;
+    	padding-top: 20%;
+    	padding-bottom: 20%;
+    	color: $white;
     }
-
 }
+.about-section{
+	background-color: $brand-secondary;
+	color: $white;
+}
+.portfolio-section{
+	background-color: $brand-neutral;
+}
+
+/* ---- grid ---- */
+
+.grid {
+  background: $brand-neutral;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 32.333%;
+  margin: 9px 9px 0 0;
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
