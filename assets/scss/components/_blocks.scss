@@ -37,16 +37,190 @@
 
 .grid-sizer,
 .grid-item {
-  width: 32.333%;
-  margin: 9px 9px 0 0;
+  xwidth: 31.333%;
+  xmargin: 5px 5px 0 0;
 }
 
 .grid-item {
   float: left;
 }
 
-.grid-item img {
+.grid-item img,
+.grid-item a {
   display: block;
   max-width: 100%;
+  outline: none;
+  border: none;
 }
+
+.grid-item a{
+	position: relative;
+	overflow: hidden;
+}
+
+.grid-title{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	padding: 20px;
+	width: 100%;
+	background: #2E3444;
+	color: #D3EEE2;
+	text-align: right;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 800;
+	font-size: 1em;
+	-webkit-transition: -webkit-transform 0.2s, color 0.2s;
+	transition: transform 0.2s, color 0.2s;
+	
+}
+
+/* Pseudo element for hover effect */
+.grid-item a::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100.5%;
+	height: 100.5%;
+	border: 0px solid transparent;
+	background: rgba(0,0,0,0);
+	content: '';
+	-webkit-transition: border-width 0.2s, border-color 0.2s;
+	transition: border-width 0.2s, border-color 0.2s;
+}
+
+/* Hover effects */
+.grid-item:hover h3 {
+	color: #fff;
+	-webkit-transform: translate3d(0,-30px,0);
+	transform: translate3d(0,-30px,0);
+}
+
+.grid-item:hover > a::before {
+	border-width: 14px;
+	border-color: #2E3444;
+}
+.grid-item{
+	padding-right: 5px;
+	padding-top:  7px;
+}
+
+
+
+.portfolio-modal {
+    .modal-dialog{
+        margin: 0;
+        height: 100%;
+        width: auto;
+    }
+    .modal-content {
+    	color: $white;
+        border-radius: 0;
+        background-color: $gray;
+        background-clip: border-box;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: none;
+        min-height: 100%;
+        padding: 100px 0;
+        text-align: center;
+        h2 {
+            margin-bottom: 15px;
+            font-size: 3em;
+        }
+        p {
+            margin-bottom: 30px;
+        }
+        p.item-intro {
+            margin: 20px 0 30px;
+            @include serif-font;
+            font-style: italic;
+            font-size: 16px;
+        }
+        ul.list-inline {
+            margin-bottom: 30px;
+            margin-top: 0;
+        }
+        img {
+            margin-bottom: 30px;
+        }
+    }
+    .close-modal {
+        position: absolute;
+        width:75px;
+        height:75px;
+        background-color:transparent;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.3;
+        }
+        .lr {
+            height:75px;
+            width:1px;
+            margin-left:35px;
+            background-color:$white;
+            transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            /* IE 9 */
+            -webkit-transform: rotate(45deg);
+            /* Safari and Chrome */
+            z-index:1051;
+            .rl {
+                height:75px;
+                width:1px;
+                background-color:$white;
+                transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                /* IE 9 */
+                -webkit-transform: rotate(90deg);
+                /* Safari and Chrome */
+                z-index:1052;
+            }            
+        }        
+    }
+    .modal-backdrop {
+        opacity: 0;
+        display: none;
+    }
+}
+
+
+// images
+img.desk{
+	position: absolute;
+	display: block;
+	top: 0;
+	left: -50px;
+	width: auto;
+	height: 600px;
+	z-index: 5;
+}
+img.mobile{
+	position: absolute;
+	display: block;
+	top: 180px;
+	left: -100px;
+	width: 250px;
+	height: 444px;
+	z-index: 7;
+	box-shadow: 0 0 20px 30px rgba(0,0,0,0.3);
+}
+.project-details{
+	padding-top: 10px;
+	position: absolute;
+	display: block;
+	top: 250px;
+	right:-150px;
+	width: 600px;
+	height: 254px;
+	z-index: 10;
+	background-color: $white;
+	box-shadow: 0 0 20px 30px rgba(0,0,0,0.3);
+	color: black;
+}
+
 

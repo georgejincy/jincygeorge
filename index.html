@@ -99,36 +99,37 @@
 
 <section class = "portfolio-section">
   <div class="container">
-  <h3 class="text-center">Portfolio</h3>
+      <h2 class="section-heading text-center">Portfolio</h2>
+      <h3 class="section-subheading text-muted text-center">View some of my recent projects.</h3>
     <!-- Masonry Grid -->
     <div class="grid">
-      <div class="grid-sizer"></div>
-      <div class="grid-item">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
+      <div class="grid-sizer col-xs-12 col-sm-12 col-md-4"></div>
+      <div class="grid-item col-xs-12 col-sm-12 col-md-4">
+        <a href="#portfolioModal1" data-toggle="modal"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" /><h3 class="grid-title">Watch My Farm</h3></a>
       </div>
-      <div class="grid-item">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
+      <div class="grid-item col-xs-12 col-sm-12 col-md-4">
+        <a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" /><h3 class="grid-title">Crumbs</h3></a>
       </div>
-      <div class="grid-item">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
+      <div class="grid-item col-xs-12 col-sm-12 col-md-4">
+        <a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" /><h3 class="grid-title">PantryDelish</h3></a>
       </div>
-      <div class="grid-item">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
+      <div class="grid-item col-xs-12 col-sm-12 col-md-4">
+        <a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" /><h3 class="grid-title">Bamazon</h3></a>
       </div>
-      <div class="grid-item">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
+      <div class="grid-item col-xs-12 col-sm-12 col-md-4">
+        <a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" /><h3 class="grid-title">FriendFinder</h3></a>
       </div>
-      <div class="grid-item">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
+      <div class="grid-item col-xs-12 col-sm-12 col-md-4">
+        <a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" /><h3 class="grid-title">LiriBOT - Command line Node App</h3></a>
       </div>
-      <div class="grid-item">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
+      <div class="grid-item col-xs-12 col-sm-12 col-md-4">
+        <a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" /><h3 class="grid-title">Avengers - Role Playing game</h3></a>
       </div>
-      <div class="grid-item">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
+      <div class="grid-item col-xs-12 col-sm-12 col-md-4">
+        <a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" /><h3 class="grid-title">Train Scheduler</h3></a>
       </div>
-      <div class="grid-item">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
+      <div class="grid-item col-xs-12 col-sm-12 col-md-4">
+        <a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" /><h3 class="grid-title">FlashCard Generator</h3></a>
       </div>
     </div>
 
@@ -136,16 +137,57 @@
 </section>
 
     
-<!-- 
-    <footer>
-        <div class="container">
+
+  <footer>
+        <div class="container text-center">
             <div class="row">
                 <div class="col-md-12">
                     <span class="copyright">Copyright &copy; JincyGeorge 2016</span>
                 </div>
             </div>
         </div>
-    </footer> ./footer -->
+  </footer>
+
+<!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-lg-12">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                               
+                                <img class="img-responsive desk" src="http://g.recordit.co/etUml60Hbp.gif">
+                                <img  class="img-responsive mobile" src="assets/images/phone/pantry_iphone.png">
+                                <div class="project-details">
+                                  <h4>PANTRY DELISH - <span class="text-muted">A Recipe Finder app</span></h4>
+                                  
+                                  <p>The pantry delish app helps hungry users find recipes from ingredients in their pantry.</p>
+                                  <h5>TECHNOLOGIES</h5>
+                                  <p>Frontend: Firebase, JavaScript, jQuery, AJAX, Materialize, Bootstrap, HTML5, CSS<br />API: Spoonacular API, Youtube API</p>
+                                  <hr />
+                                  <a href="https://github.com/georgejincy/PantryDelish" class="btn btn-2 btn-2g btn-info" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i>&nbsp;View Source</a>
+                                  <a href="https://infinite-brushlands-87290.herokuapp.com/" class="btn btn-2 btn-2g btn-info" target="_blank"><i class="fa fa-desktop" aria-hidden="true"></i>&nbsp;View Demo</a>
+                                  <button type="button" class="btn btn-2 btn-2g btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Bootstrap core JavaScript
