@@ -2,13 +2,11 @@
 	Portfolio - Jincy George
 	Author: Jincy George
 */
-/* line 2, C:/Users/JinZ/Documents/Coding Bootcamp/Coding Bootcamp/portfolio/jincygeorge/assets/scss/layout/_header.scss */
 header .intro-text {
   padding-top: 100px;
   padding-bottom: 50px;
 }
 
-/* line 5, C:/Users/JinZ/Documents/Coding Bootcamp/Coding Bootcamp/portfolio/jincygeorge/assets/scss/layout/_header.scss */
 header .intro-text .intro-lead-in {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
@@ -17,7 +15,6 @@ header .intro-text .intro-lead-in {
   margin-bottom: 25px;
 }
 
-/* line 12, C:/Users/JinZ/Documents/Coding Bootcamp/Coding Bootcamp/portfolio/jincygeorge/assets/scss/layout/_header.scss */
 header .intro-text .intro-heading {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -27,32 +24,27 @@ header .intro-text .intro-heading {
   margin-bottom: 25px;
 }
 
-/* line 1, C:/Users/JinZ/Documents/Coding Bootcamp/Coding Bootcamp/portfolio/jincygeorge/assets/scss/layout/_nav.scss */
 .navbar-default {
   background: transparent;
   border: none !important;
 }
 
 @media (min-width: 768px) {
-  /* line 6, C:/Users/JinZ/Documents/Coding Bootcamp/Coding Bootcamp/portfolio/jincygeorge/assets/scss/layout/_nav.scss */
   .navbar .navbar-nav {
     display: inline-block;
     float: none;
     vertical-align: top;
   }
-  /* line 12, C:/Users/JinZ/Documents/Coding Bootcamp/Coding Bootcamp/portfolio/jincygeorge/assets/scss/layout/_nav.scss */
   .navbar .navbar-collapse {
     text-align: center;
   }
 }
 
-/* line 1, C:/Users/JinZ/Documents/Coding Bootcamp/Coding Bootcamp/portfolio/jincygeorge/assets/scss/layout/_footer.scss */
 footer {
   margin: 10px;
   text-align: center;
 }
 
-/* line 2, C:/Users/JinZ/Documents/Coding Bootcamp/Coding Bootcamp/portfolio/jincygeorge/assets/scss/components/_blocks.scss */
 .home-screen {
   background: linear-gradient(rgba(52, 51, 52, 0.45), rgba(52, 51, 52, 0.45)), url("../images/header-bg.jpg");
   background-repeat: no-repeat;
@@ -68,7 +60,6 @@ footer {
   min-height: 600px;
 }
 
-/* line 25, C:/Users/JinZ/Documents/Coding Bootcamp/Coding Bootcamp/portfolio/jincygeorge/assets/scss/components/_blocks.scss */
 .portfolio-grid {
   margin: 20px 0 0 0;
   padding: 0;
@@ -83,12 +74,10 @@ footer {
     content: '';
     display: table;
 } */
-/* line 40, C:/Users/JinZ/Documents/Coding Bootcamp/Coding Bootcamp/portfolio/jincygeorge/assets/scss/components/_blocks.scss */
 .portfolio-grid:after {
   clear: both;
 }
 
-/* line 44, C:/Users/JinZ/Documents/Coding Bootcamp/Coding Bootcamp/portfolio/jincygeorge/assets/scss/components/_blocks.scss */
 .portfolio-grid li {
   width: 400px;
   height: 320px;
@@ -96,7 +85,6 @@ footer {
   margin: 20px;
 }
 
-/* line 52, C:/Users/JinZ/Documents/Coding Bootcamp/Coding Bootcamp/portfolio/jincygeorge/assets/scss/components/_blocks.scss */
 .portfolio-item {
   width: 100%;
   height: 100%;
@@ -105,7 +93,6 @@ footer {
   perspective: 900px;
 }
 
-/* line 61, C:/Users/JinZ/Documents/Coding Bootcamp/Coding Bootcamp/portfolio/jincygeorge/assets/scss/components/_blocks.scss */
 .portfolio-info {
   position: absolute;
   width: 100%;
@@ -113,7 +100,6 @@ footer {
   transform-style: preserve-3d;
 }
 
-/* line 69, C:/Users/JinZ/Documents/Coding Bootcamp/Coding Bootcamp/portfolio/jincygeorge/assets/scss/components/_blocks.scss */
 .portfolio-info > div {
   display: block;
   position: absolute;
@@ -124,19 +110,16 @@ footer {
   transform-origin: 50% 0%;
 }
 
-/* line 79, C:/Users/JinZ/Documents/Coding Bootcamp/Coding Bootcamp/portfolio/jincygeorge/assets/scss/components/_blocks.scss */
 .portfolio-info .portfolio-info-front {
   box-shadow: inset 0 0 0 16px rgba(0, 0, 0, 0.3);
 }
 
-/* line 84, C:/Users/JinZ/Documents/Coding Bootcamp/Coding Bootcamp/portfolio/jincygeorge/assets/scss/components/_blocks.scss */
 .portfolio-info .portfolio-info-back {
   transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
   background: #000;
   opacity: 0;
 }
 
-/* line 90, C:/Users/JinZ/Documents/Coding Bootcamp/Coding Bootcamp/portfolio/jincygeorge/assets/scss/components/_blocks.scss */
 .pf-img1 {
   background-image: url(../images/pantrydelish.jpg);
   background-position: center center;
@@ -146,7 +129,6 @@ footer {
   -o-background-size: cover;
 }
 
-/* line 95, C:/Users/JinZ/Documents/Coding Bootcamp/Coding Bootcamp/portfolio/jincygeorge/assets/scss/components/_blocks.scss */
 .pf-img2 {
   background-image: url(../images/githubfinder.jpg);
   background-position: center center;
@@ -156,7 +138,6 @@ footer {
   -o-background-size: cover;
 }
 
-/* line 100, C:/Users/JinZ/Documents/Coding Bootcamp/Coding Bootcamp/portfolio/jincygeorge/assets/scss/components/_blocks.scss */
 .pf-img1 {
   background-image: url(../images/trainscheduler.jpg);
   background-position: center center;
@@ -166,7 +147,6 @@ footer {
   -o-background-size: cover;
 }
 
-/* line 105, C:/Users/JinZ/Documents/Coding Bootcamp/Coding Bootcamp/portfolio/jincygeorge/assets/scss/components/_blocks.scss */
 .pf-img1 {
   background-image: url(../images/looneytrivia.png);
   background-position: center center;
@@ -176,7 +156,6 @@ footer {
   -o-background-size: cover;
 }
 
-/* line 110, C:/Users/JinZ/Documents/Coding Bootcamp/Coding Bootcamp/portfolio/jincygeorge/assets/scss/components/_blocks.scss */
 .pf-img1 {
   background-image: url(../images/AvengersRPG.jpg);
   background-position: center center;
@@ -186,27 +165,21 @@ footer {
   -o-background-size: cover;
 }
 
-/* line 116, C:/Users/JinZ/Documents/Coding Bootcamp/Coding Bootcamp/portfolio/jincygeorge/assets/scss/components/_blocks.scss */
 .portfolio-item:hover .portfolio-info-front {
   transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
   opacity: 0;
 }
 
-/* line 121, C:/Users/JinZ/Documents/Coding Bootcamp/Coding Bootcamp/portfolio/jincygeorge/assets/scss/components/_blocks.scss */
 .portfolio-item:hover .portfolio-info-back {
   transform: rotate3d(1, 0, 0, 0deg);
   opacity: 1;
 }
 
-/* line 128, C:/Users/JinZ/Documents/Coding Bootcamp/Coding Bootcamp/portfolio/jincygeorge/assets/scss/components/_blocks.scss */
 #contact {
   text-align: center;
 }
 
-/* line 130, C:/Users/JinZ/Documents/Coding Bootcamp/Coding Bootcamp/portfolio/jincygeorge/assets/scss/components/_blocks.scss */
 #contact .social-buttons {
   width: 100%;
   font-size: 40px;
 }
-
-/*# sourceMappingURL=../css/main.map */
