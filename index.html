@@ -21,6 +21,10 @@
 
     <!-- Custom styles -->
     <link href="assets/css/main.css" rel="stylesheet">
+
+    <!--Font styles -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif|Droid+Serif|Kaushan+Script|Montserrat|Tillana" rel="stylesheet">
+
     <script src="assets/javascript/modernizr-custom.js"></script>
 
   </head>
@@ -43,10 +47,10 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav nav-pills social-nav navbar-left">
-            <li><a class = "btn btn-default butn btn-2 btn-2i" href="#"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
-            <li><a class = "btn btn-default butn btn-2 btn-2i" href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-            <li><a class = "btn btn-default butn btn-2 btn-2i" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-            <li><a class = "btn btn-default butn btn-2 btn-2i" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a class = "btn btn-default butn btn-2 btn-2i" href="https://codepen.io/jincygeorge/pens/public/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+            <li><a class = "btn btn-default butn btn-2 btn-2i" href="https://github.com/georgejincy" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a class = "btn btn-default butn btn-2 btn-2i" href="https://www.linkedin.com/in/jincy-george" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+           <!--  <li><a class = "btn btn-default butn btn-2 btn-2i" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> -->
           </ul>
 
           <!-- <ul class="nav text-center">
@@ -54,87 +58,113 @@
           </ul> -->
         
           <ul class="nav nav-pills menu-nav navbar-right">
-            <li><a class = "btn btn-default butn btn-2 btn-2g" href="#">ABOUT</a></li>
-            <li><a class = "btn btn-default butn btn-2 btn-2g" href="#">PORTFOLIO</a></li>
-            <li><a class = "btn btn-default butn btn-2 btn-2g" href="#">BLOG</a></li>
-            <li><a class = "btn btn-default butn btn-2 btn-2g" href="#">CONTACT</a></li>
+            <li><a class = "btn btn-default butn btn-2 btn-2g page-scroll" href="#about">ABOUT</a></li>
+            <li><a class = "btn btn-default butn btn-2 btn-2g page-scroll" href="#portfolio">PORTFOLIO</a></li>
+            <!-- <li><a class = "btn btn-default butn btn-2 btn-2g" href="#">BLOG</a></li> -->
+            <li><a class = "btn btn-default butn btn-2 btn-2g page-scroll" href="#contact">CONTACT</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
      </nav>
   </header>
 
-  <section class = "intro-header">
+  <section class = "intro-header" id="intro">
     <div class="container">
+    <div class="margin-box"></div>
+    <div class="margin-box"></div>
       <div class="row">
-        <div class = "col-lg-12 col-md-12">
+        <div class = "col-lg-offset-6 col-lg-5 col-md-5">
           <div class = "intro-message">
-            <h1>Jincy George</h1>
-            <h3>Web developer</h3>
+            <h1>Web Developer</h1>
+            
           </div>
         </div>
       </div>
+    <a class href="#about"><span></span>Scroll</a>
     </div>  
   </section>
 
-  <section class = "about-section">
+  <section class = "about-section" id = "about">
     <div class="container">
+    
+    
+    <h2 class="section-heading text-center">ABOUT ME</h2>
+    <h3 class="section-subheading text-muted text-center">Passionate. Creative. Hardworking</h3>
       <div class="row">
         <div class = "col-lg-5 col-md-5">
           <div class = "about-message">
             <div class = "pull-left"><h1>hi,</h1></div>
             <div class = "pull-right">
-              <p>I'm a web developer based in North Carolina. I love creating memorable user experiences using simple modern designs.
+              <p>I'm a web developer based in North Carolina. I love creating memorable user experiences using simple modern designs. I love playing with colors, tinkering with designs and animations and I love to learn!</p>
+              <p>Previously, I worked as a RPG developer for IBM iSeries systems. I couldn't  wait to work on applications that had color in them. When I learned about the Full Stack developer program at University of North Carolina - Chapel Hill, I knew the opportunity was perfect for me to step into the field of web development. I found that I could use my coding skills from my experience as a programmer with an added advantage - create whatever I can imagine! Now, there is no looking back.
               </p>
-              <p>I also love to draw and sketch during my freetimes and all things DIY!</p>
+              <p>I also love to draw and sketch during my freetime and all things DIY!</p>
             </div>
           </div>
         </div>
         <div class = "col-lg-5 col-md-5">
-          <img src="assets/images/fullstack.png">
+          <img src="assets/images/skills.png">
         </div>
       </div>
     </div>  
   </section>
 
-<section class = "portfolio-section">
+<section class = "portfolio-section" id="portfolio">
+
   <div class="container">
-      <h2 class="section-heading text-center">Portfolio</h2>
+      <div class = "empty-box"></div>
+      <h2 class="section-heading text-center">PORTFOLIO</h2>
       <h3 class="section-subheading text-muted text-center">View some of my recent projects.</h3>
     <!-- Masonry Grid -->
     <div class="grid">
       <div class="grid-sizer col-xs-12 col-sm-12 col-md-4"></div>
       <div class="grid-item col-xs-12 col-sm-12 col-md-4">
-        <a href="#portfolioModal1" data-toggle="modal"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" /><h3 class="grid-title">Watch My Farm</h3></a>
+        <a href="#portfolioModal2" data-toggle="modal"><img src="assets/images/portfolio/farm.png" /><h3 class="grid-title">Watch My Farm</h3></a>
       </div>
       <div class="grid-item col-xs-12 col-sm-12 col-md-4">
-        <a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" /><h3 class="grid-title">Crumbs</h3></a>
+        <a href="#portfolioModal3" data-toggle="modal"><img src="assets/images/portfolio/crumbs.png" /><h3 class="grid-title">Crumbs</h3></a>
       </div>
       <div class="grid-item col-xs-12 col-sm-12 col-md-4">
-        <a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" /><h3 class="grid-title">PantryDelish</h3></a>
+        <a href="#portfolioModal1" data-toggle="modal"><img src="assets/images/portfolio/pantry.png" /><h3 class="grid-title">PantryDelish</h3></a>
+      </div>
+      
+      <div class="grid-item col-xs-12 col-sm-12 col-md-4">
+        <a href="#portfolioModal4" data-toggle="modal"><img src="assets/images/portfolio/friend.png" /><h3 class="grid-title">FriendFinder</h3></a>
       </div>
       <div class="grid-item col-xs-12 col-sm-12 col-md-4">
-        <a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" /><h3 class="grid-title">Bamazon</h3></a>
+        <a href="#portfolioModal5" data-toggle="modal"><img src="assets/images/portfolio/liri.jpg" /><h3 class="grid-title">LiriBOT - Command line Node App</h3></a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-12 col-md-4">
+        <a href="#portfolioModal6" data-toggle="modal"><img src="assets/images/portfolio/train.png" /><h3 class="grid-title">Train Scheduler</h3></a>
       </div>
       <div class="grid-item col-xs-12 col-sm-12 col-md-4">
-        <a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" /><h3 class="grid-title">FriendFinder</h3></a>
+        <a href="#portfolioModal9" data-toggle="modal"><img src="https://static.pexels.com/photos/109400/pexels-photo-109400.jpeg" /><h3 class="grid-title">Burger App</h3></a>
       </div>
       <div class="grid-item col-xs-12 col-sm-12 col-md-4">
-        <a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" /><h3 class="grid-title">LiriBOT - Command line Node App</h3></a>
+        <a href="#portfolioModal8" data-toggle="modal"><img src="assets/images/portfolio/bamazonstore.jpeg" /><h3 class="grid-title">Bamazon - A Command Line AMAZON like APP</h3></a>
       </div>
       <div class="grid-item col-xs-12 col-sm-12 col-md-4">
-        <a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" /><h3 class="grid-title">Avengers - Role Playing game</h3></a>
-      </div>
-      <div class="grid-item col-xs-12 col-sm-12 col-md-4">
-        <a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" /><h3 class="grid-title">Train Scheduler</h3></a>
-      </div>
-      <div class="grid-item col-xs-12 col-sm-12 col-md-4">
-        <a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" /><h3 class="grid-title">FlashCard Generator</h3></a>
+        <a href="#portfolioModal7" data-toggle="modal"><img src="assets/images/portfolio/rpg.png" /><h3 class="grid-title">Avengers - Role Playing game</h3></a>
       </div>
     </div>
 
   </div>
 </section>
+
+  <section class = "contact-section" id = "contact">
+    <div class="container">
+    
+    
+    <h2 class="section-heading text-center">GET IN TOUCH</h2>
+  
+      <div class="row">
+        <div class = "text-center col-md-12">
+          
+              <p>Connect with me on <a href="https://www.linkedin.com/in/jincy-george" target="_blank">Linkedin</a>, checkout my code on <a href="https://github.com/georgejincy" target="_blank">Github</a> or just drop me an <a href="mailto:jincydz@gmail.com">email!</a></p>
+      </div>
+    </div>  
+  </section>
 
     
 
@@ -151,7 +181,7 @@
 <!-- Portfolio Modals -->
     <!-- Use the modals below to showcase details about your portfolio projects! -->
 
-    <!-- Portfolio Modal 1 -->
+    <!-- Portfolio Modal 1 - PantryDelish -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -170,14 +200,330 @@
                                 <img class="img-responsive desk" src="http://g.recordit.co/etUml60Hbp.gif">
                                 <img  class="img-responsive mobile" src="assets/images/phone/pantry_iphone.png">
                                 <div class="project-details">
-                                  <h4>PANTRY DELISH - <span class="text-muted">A Recipe Finder app</span></h4>
+                                  <h4><span class = "bold-text">PANTRY DELISH</span> - <span class="pjt-intro text-muted">A Recipe Finder app</span></h4>
                                   
                                   <p>The pantry delish app helps hungry users find recipes from ingredients in their pantry.</p>
-                                  <h5>TECHNOLOGIES</h5>
-                                  <p>Frontend: Firebase, JavaScript, jQuery, AJAX, Materialize, Bootstrap, HTML5, CSS<br />API: Spoonacular API, Youtube API</p>
-                                  <hr />
+                                  <h5 class="semibold-text">TECHNOLOGIES</h5>
+                                  <p><span class="semibold-light">Frontend:</span> Firebase, JavaScript, jQuery, AJAX, Materialize, Bootstrap, HTML5, CSS<br /><span class="semibold-light">API:</span> Spoonacular API, Youtube API</p>
+                                
                                   <a href="https://github.com/georgejincy/PantryDelish" class="btn btn-2 btn-2g btn-info" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i>&nbsp;View Source</a>
                                   <a href="https://infinite-brushlands-87290.herokuapp.com/" class="btn btn-2 btn-2g btn-info" target="_blank"><i class="fa fa-desktop" aria-hidden="true"></i>&nbsp;View Demo</a>
+                                  <button type="button" class="btn btn-2 btn-2g btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Portfolio Modal 2 - WatchMyFarm -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-lg-12">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                               
+                                <img class="img-responsive desk" src="http://g.recordit.co/nkkbuFsuoE.gif">
+                                <img  class="img-responsive mobile" src="assets/images/phone/farm_iphone.png">
+                                <div class="project-details">
+                                  <h4><span class = "bold-text">WATCH MY FARM</span> - <span class="pjt-intro text-muted">A farm sitting app</span></h4>
+                                  
+                                  <p>The WatchMyFarm application allows a farmer to log their animals, detailed feed and care instructions and schedule their time away. Once scheduled, the farmer then sends a link to the sitter to access the duties assigned and they can monitor the sitters progress of completing the duties.</p>
+                                  <h5 class="semibold-text">TECHNOLOGIES</h5>
+                                  <p><span class="semibold-light">Frontend:</span> React, JavaScript, jQuery, AJAX, Bootstrap, HTML5, CSS<br /><span class="semibold-light">API:</span> Dark Sky API<br /><span class="semibold-light">Back End:</span> NodeJS, Express, Express Handlebars, PassportJS, ShortID, MySQL, Sequelize</p>
+                                
+                                  <a href="https://github.com/sssharkie1/watch-my-farm" class="btn btn-2 btn-2g btn-info" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i>&nbsp;View Source</a>
+                                  <a href="https://stormy-everglades-67032.herokuapp.com/" class="btn btn-2 btn-2g btn-info" target="_blank"><i class="fa fa-desktop" aria-hidden="true"></i>&nbsp;View Demo</a>
+                                  <button type="button" class="btn btn-2 btn-2g btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <!-- Portfolio Modal 3 - Crumbs -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-lg-12">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                               
+                                <img class="img-responsive desk" src="http://g.recordit.co/MVtJtnTPMw.gif">
+                                <img  class="img-responsive mobile" src="assets/images/phone/crumbs_iphone.png">
+                                <div class="project-details">
+                                  <h4><span class = "bold-text">CRUMBS</span> - <span class="pjt-intro text-muted">A personal repo for your meal experiences</span></h4>
+                                  
+                                  <p>Crumbs is an application that helps users keep track of all their meal experiences at restaurants. A user can rate the meal, add comments and also save a picture of the meal.</p>
+                                  <h5 class="semibold-text">TECHNOLOGIES</h5>
+                                  <p>
+                                  <span class="semibold-light">Frontend:</span>JavaScript, jQuery, AJAX, Bootstrap, HTML, CSS<span class="semibold-light"><br />Back End:</span> NodeJS, Express, Express Handlebars, PassportJS, MySQL, Sequelize
+                                  </p>
+                                
+                                  <a href="https://github.com/georgejincy/crumbs" class="btn btn-2 btn-2g btn-info" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i>&nbsp;View Source</a>
+                                  <a href="https://crumbsforyou.herokuapp.com" class="btn btn-2 btn-2g btn-info" target="_blank"><i class="fa fa-desktop" aria-hidden="true"></i>&nbsp;View Demo</a>
+                                  <button type="button" class="btn btn-2 btn-2g btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                <!-- Portfolio Modal 7 - Avengers-RPG -->
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-lg-12">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                               
+                                <img class="img-responsive desk" src="http://g.recordit.co/BSv65CmLtt.gif">
+                                
+                                <div class="project-details">
+                                  <h4><span class = "bold-text">Avengers - RPG</span> </h4>
+                                  
+                                  <p>An Avengers themed fun Role playing game.</p>
+                                  <h5 class="semibold-text">TECHNOLOGIES</h5>
+                                  <p>
+                                  <span class="semibold-light">Frontend:</span>JavaScript,jQuery, HTML, CSS
+                                  </p>
+                                
+                                  <a href="https://github.com/georgejincy/Avengers-RPG" class="btn btn-2 btn-2g btn-info" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i>&nbsp;View Source</a>
+                                  <a href="https://lit-sands-45120.herokuapp.com/" class="btn btn-2 btn-2g btn-info" target="_blank"><i class="fa fa-desktop" aria-hidden="true"></i>&nbsp;View Demo</a>
+                                  <button type="button" class="btn btn-2 btn-2g btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                  <!-- Portfolio Modal 8 - Bamazon -->
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-lg-12">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                               
+                                <img class="img-responsive desk" src="http://g.recordit.co/vsxA8VztUY.gif">
+                                
+                                <div class="project-details">
+                                  <h4><span class = "bold-text">Bamazon</span> </h4>
+                                  
+                                  <p>An Amazon-like storefront applcation built using Nodejs and inquirer package that has a customer view, a manager view and a supervisor view</p>
+                                  <h5 class="semibold-text">TECHNOLOGIES</h5>
+                                  <p>
+                                  <span class="semibold-light">Backend:</span>NodeJS, inquirer, MySQL
+                                  </p>
+                                
+                                  <a href="https://github.com/georgejincy/Bamazon-app" class="btn btn-2 btn-2g btn-info" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i>&nbsp;View Source</a>
+                                
+                                  <button type="button" class="btn btn-2 btn-2g btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                  <!-- Portfolio Modal 5 - LIRI Bot -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-lg-12">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                               
+                                <img class="img-responsive desk" src="http://g.recordit.co/9TdYNBHPbM.gif">
+                                
+                                <div class="project-details">
+                                  <h4><span class = "bold-text">LIRIBot</span> </h4>
+                                  
+                                  <p>LIRI is a Language Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data. LIRI uses the following commands:my-tweets&nbsp;spotify-this-song&nbsp;movie-this&nbsp;do-what-it-says&nbsp;</p>
+                                  <h5 class="semibold-text">TECHNOLOGIES</h5>
+                                  <p>
+                                  <span class="semibold-light">Backend:</span>NodeJS, npm packages: require, twitter, spotify<br /><span class="semibold-light">API:</span>TMDB
+                                  </p>
+                                
+                                  <a href="https://github.com/georgejincy/LIRI-Bot" class="btn btn-2 btn-2g btn-info" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i>&nbsp;View Source</a>
+                                
+                                  <button type="button" class="btn btn-2 btn-2g btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                      <!-- Portfolio Modal 4 - FriendFinder -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-lg-12">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                               
+                                <img class="img-responsive desk" src="http://g.recordit.co/GAdpDIll1b.gif">
+                                
+                                <div class="project-details">
+                                  <h4><span class = "bold-text">FriendFinder</span> </h4>
+                                  
+                                  <p>FriendFinder is a full stack compatibility based web application that uses the results from user surveys to compare answers to the other user results and then displays the name and picture of the user with best overall match.</p>
+                                  <h5 class="semibold-text">TECHNOLOGIES</h5>
+                                  <p>
+                                  <span class="semibold-light">Frontend:</span>HTML, CSS<br />
+                                  <span class="semibold-light">Backend:</span>NodeJS, Express, npm packages: path, body-parser
+                                  </p>
+                                
+                                  <a href="https://github.com/georgejincy/FriendFinder-app" class="btn btn-2 btn-2g btn-info" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i>&nbsp;View Source</a>
+                                  <a href="https://desolate-waters-19613.herokuapp.com/" class="btn btn-2 btn-2g btn-info" target="_blank"><i class="fa fa-desktop" aria-hidden="true"></i>&nbsp;View Demo</a>
+                                
+                                  <button type="button" class="btn btn-2 btn-2g btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Portfolio Modal 6 - Train Scheduler -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-lg-12">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                               
+                                <img class="img-responsive desk" src="http://g.recordit.co/vTzN5fPewF.gif">
+                                <img  class="img-responsive mobile" src="assets/images/phone/train_iphone.png">
+                                <div class="project-details">
+                                  <h4><span class = "bold-text">TRAIN SCHEDULER</span></h4>
+                                  
+                                  <p>A train schedule application that incorporates Firebase to host arrival and departure data. The application retrieves and manipulate this information with Moment.js. It provides up-to-date information about various trains, namely their arrival times and how many minutes remain until they arrive at their station. The "minutes to arrival" and "next train time" are updated once every minute</p>
+                                  <h5 class="semibold-text">TECHNOLOGIES</h5>
+                                  <p><span class="semibold-light">Frontend:</span> Firebase, JavaScript, jQuery, MomentJS, Bootstrap, HTML5, CSS</p>
+                                
+                                  <a href="https://github.com/georgejincy/TrainSchedulerapp" class="btn btn-2 btn-2g btn-info" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i>&nbsp;View Source</a>
+                                  <a href="https://guarded-reaches-92728.herokuapp.com/" class="btn btn-2 btn-2g btn-info" target="_blank"><i class="fa fa-desktop" aria-hidden="true"></i>&nbsp;View Demo</a>
+                                  <button type="button" class="btn btn-2 btn-2g btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <!-- Portfolio Modal 9 - Burger -->
+    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-lg-12">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                               
+                                <img class="img-responsive desk" src="http://g.recordit.co/vwkvrRhEbV.gif">
+                                <img  class="img-responsive mobile" src="assets/images/phone/burger_iphone.png">
+                                <div class="project-details">
+                                  <h4><span class = "bold-text">EAT DA BURGER!</span></h4>
+                                  
+                                  <p>A burger logger with MySQL, Node, Express, Handlebars and Sequelize ORM , also uses the MVC pattern</p>
+                                  <h5 class="semibold-text">TECHNOLOGIES</h5>
+                                  <p><span class="semibold-light">Frontend:</span>Bootstrap, HTML5, CSS<br />Back End:</span> NodeJS, Express, Express Handlebars, MySQL, Sequelize</p>
+                                
+                                  <a href="https://github.com/georgejincy/sequelizedBurger" class="btn btn-2 btn-2g btn-info" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i>&nbsp;View Source</a>
+                                  <a href="https://mighty-dawn-47092.herokuapp.com/" class="btn btn-2 btn-2g btn-info" target="_blank"><i class="fa fa-desktop" aria-hidden="true"></i>&nbsp;View Demo</a>
                                   <button type="button" class="btn btn-2 btn-2g btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                                 </div>
                                 
@@ -194,6 +540,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/javascript/jquery-3.1.1.min.js"></script>
+    <script src="assets/javascript/jquery.easing.1.3.js"></script>
     <script src="assets/javascript/masonry.pkgd.min.js"></script>
     <script src="assets/javascript/imagesloaded.pkgd.min.js"></script>
     <script src="assets/javascript/bootstrap.js"></script>
@@ -252,7 +599,9 @@
           });
         }
       });
+
     })();
+
   </script>
     
   </body>

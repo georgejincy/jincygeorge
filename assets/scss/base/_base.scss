@@ -1,4 +1,4 @@
-body{
-	xbackground-color: #35B3B1;
-	xpadding-top: 70px;
+body {
+    overflow-x: hidden;
+    @include body-font;
 }

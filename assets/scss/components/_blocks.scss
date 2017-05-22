@@ -1,20 +1,49 @@
 .intro-header{
 	padding-top: 0px;
-	padding-bottom: 20px;
+	padding-bottom: 50px;
+	height: 610px;
 	text-align: center;
-	xbackground: linear-gradient(rgba(40, 171, 250, 0.55), rgba(40, 171, 250, 0.55)), url(../images/IMG_6368.jpg) no-repeat center center;
+	xbackground: linear-gradient(rgba(40, 171, 250, 0.55), rgba(40, 171, 250, 0.55)), url(../images/IMG_6378.jpg) no-repeat center center;
 	background: url(../images/mainbg.jpg) no-repeat center center;
     background-size: cover;
     .intro-message{
     	position: relative;
     	padding-top: 20%;
     	padding-bottom: 20%;
-    	color: $white;
+    	color: $brand-purple;
+
+    	@include script-font;
+    	h1{
+    		font-size: $rem-base * 2.5;
+    	}
+    }
+}
+section {
+    padding: 100px 0;
+    h2.section-heading {
+        font-size: 40px;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    h3.section-subheading {
+        font-size: 16px;
+        @include serif-font;
+        text-transform: none;
+        font-style: italic;
+        font-weight: 400;
+        margin-bottom: 65px;
     }
 }
 .about-section{
-	background-color: $brand-secondary;
+	xbackground: url(../images/rice-paper-sky.jpg);
+	xbackground: url(../images/cream_bg.jpg);
+	xbackground-size: cover;
+	//background-color: $brand-blue;
+	background-color: $brand-primary;
 	color: $white;
+	.about-message{
+		font-size: $rem-base;
+	}
 }
 .portfolio-section{
 	background-color: $brand-neutral;
@@ -74,6 +103,7 @@
 	font-size: 1em;
 	-webkit-transition: -webkit-transform 0.2s, color 0.2s;
 	transition: transform 0.2s, color 0.2s;
+	font-family: $noto-serif;
 	
 }
 
@@ -104,7 +134,7 @@
 }
 .grid-item{
 	padding-right: 5px;
-	padding-top:  7px;
+	padding-top:  20px;
 }
 
 
@@ -210,17 +240,93 @@ img.mobile{
 	box-shadow: 0 0 20px 30px rgba(0,0,0,0.3);
 }
 .project-details{
-	padding-top: 10px;
+	padding: 15px 10px 10px 15px;
+	text-align: left;
 	position: absolute;
 	display: block;
 	top: 250px;
 	right:-150px;
 	width: 600px;
-	height: 254px;
+	height: 315px;
 	z-index: 10;
 	background-color: $white;
 	box-shadow: 0 0 20px 30px rgba(0,0,0,0.3);
 	color: black;
+	font-family: $noto-sans;
+
+	h4{
+		font-family: $noto-serif;
+	}
+	.pjt-intro{
+		font-size: $rem-base * 0.75;
+		font-style: italic;
+	}
+
 }
 
+.bold-text{
+	font-weight: 700;
+}
+.semibold-text{
+	font-weight: bolder;
+}
+.semibold-light{
+	font-weight: bold;
+}
+
+.about-section{
+}
+
+.margin-box{
+	height: 100px;
+	width: 100%;
+}
+
+
+#intro a {
+	padding-top: 60px;
+	@include heading-font;
+	font-size: $rem-base * 1.5;
+}
+#intro a span {
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	width: 24px;
+	height: 24px;
+	margin-left: -12px;
+	border-left: 3px solid $brand-primary;
+	border-bottom: 3px solid $brand-primary;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-animation: sdb04 2s infinite;
+	animation: sdb04 2s infinite;
+	box-sizing: border-box;
+}
+@-webkit-keyframes sdb04 {
+	0% {
+		-webkit-transform: rotate(-45deg) translate(0, 0);
+	}
+	20% {
+		-webkit-transform: rotate(-45deg) translate(-10px, 10px);
+	}
+	40% {
+		-webkit-transform: rotate(-45deg) translate(0, 0);
+	}
+}
+@keyframes sdb04 {
+	0% {
+		transform: rotate(-45deg) translate(0, 0);
+	}
+	20% {
+		transform: rotate(-45deg) translate(-10px, 10px);
+	}
+	40% {
+		transform: rotate(-45deg) translate(0, 0);
+	}
+}
+
+#contact{
+	font-size: $rem-base;
+}
 

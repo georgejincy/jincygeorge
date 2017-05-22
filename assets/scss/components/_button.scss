@@ -29,9 +29,10 @@
 } */
 /* Button 2 */
 .btn-2 {
-	background: $brand-secondary;
+	background: $brand-purple;
+	@include heading-font;
 	color: #fff;
-	box-shadow: 0 6px $brand-secondary-dark;
+	box-shadow: 0 6px #9CA0CD;
 	-webkit-transition: none;
 	-moz-transition: none;
 	transition: none;
@@ -42,7 +43,7 @@
 }
 
 .btn-2g:hover {
-	box-shadow: 0 4px $brand-secondary-dark;
+	box-shadow: 0 4px $brand-purple;
 	top: 2px;
 }
 
@@ -52,6 +53,7 @@
 }
 .btn-2i {
 	border-radius: 50%;
+	@include heading-font;
 	width: 50px;
 	height: 50px;
 	padding: 0;

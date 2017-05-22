@@ -10,3 +10,21 @@ var $grid = $('.grid').masonry({
 $grid.imagesLoaded().progress( function() {
   $grid.masonry();
 });  
+
+$(function() {
+				// jQuery for page scrolling feature - requires jQuery Easing plugin
+                $('a.page-scroll').bind('click',function(event){
+                    var $anchor = $(this);
+                    
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1500,'easeInOutExpo');
+                    /*
+                    if you don't want to use the easing effects:
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1000);
+                    */
+                    event.preventDefault();
+                });
+            });
