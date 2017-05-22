@@ -1,15 +1,20 @@
-.navbar-default{
-    background:transparent;
-    border:none !important;
+.navigation{
+	background-color: none !important;
 }
-@media (min-width: 768px) {
-    .navbar .navbar-nav {
-        display: inline-block;
-        float: none;
-        vertical-align: top;
-    }
+nav{
+	top: 0px;
+}
+.navbar{
+	padding-top: 50px;
+}
+.navbar-default{
+	background-color: transparent;
+	border-color: transparent;
+}
 
-    .navbar .navbar-collapse {
-        text-align: center;
-    }
+ul.social > li{
+	margin-left: 20px;
+}
+.social-nav{
+	margin-right: 20px;
 }
